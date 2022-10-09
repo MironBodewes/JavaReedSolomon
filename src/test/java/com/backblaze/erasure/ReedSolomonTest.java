@@ -90,9 +90,9 @@ public class ReedSolomonTest {
     @Test
     public void testBigEncodeDecode() {
         final Random random = new Random(65665);
-        final int dataCount = 64;
-        final int parityCount = 64;
-        final int shardSize = 20000;
+        final int dataCount = 223;
+        final int parityCount = 6;
+        final int shardSize = 30000;
         byte [] [] dataShards = new byte [dataCount] [shardSize];
         for (byte [] shard : dataShards) {
             for (int i = 0; i < shard.length; i++) {
